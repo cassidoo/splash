@@ -1,7 +1,7 @@
 class CreateStatuses < ActiveRecord::Migration
   def change
     create_table :statuses do |t|
-      t.string :subject
+      t.string :name
       t.text :content
 
       t.timestamps

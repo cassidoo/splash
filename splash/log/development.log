@@ -2090,3 +2090,17 @@ ActionView::Template::Error (undefined method `subject' for #<Status:0x000001029
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
   Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (11.1ms)
+
+
+Started GET "/statuses" for 127.0.0.1 at 2013-10-19 14:51:52 -0500
+Processing by StatusesController#index as HTML
+  [1m[35mStatus Load (0.2ms)[0m  SELECT "statuses".* FROM "statuses" 
+Completed 500 Internal Server Error in 1ms
+
+ActionView::MissingTemplate (Missing template statuses/index, application/index with {:locale=>[:en], :formats=>[:html], :handlers=>[:erb, :builder, :coffee]}. Searched in:
+  * "/Users/zplata/Documents/DWHack/splash/splash/app/views"
+):
+  app/controllers/statuses_controller.rb:7:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.12/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
