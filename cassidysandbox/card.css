@@ -36,6 +36,40 @@ h1 {
 	line-height: 1.5em;
 }
 
+.set
+{
+	display: block;
+	width: 200px;
+	height: 170px;
+	background-color: white;
+	border: 1px solid #6C006E;
+	color: #6C006E;
+	margin: 10px;
+	font-size: 2em;
+	line-height: 100px;
+}
+
+.card
+{
+	padding: 10px;
+	word-wrap: break-word;
+	text-overflow: ellipsis;
+	font-size: 15px;
+	line-height: 18px;
+}
+
+#adddeck
+{
+	font-size: 4em;
+	text-align: center;
+}
+
+#adddeck span
+{
+	line-height: 50px;
+	font-size: .5em;
+}
+
 /*Buttons*/
 	
 .button {
