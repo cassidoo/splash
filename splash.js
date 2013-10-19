@@ -13,8 +13,8 @@
 	// Explains card and puts in front and back side data
 	var card = [];
 	var implementCard = function(){
-		var frontData = man;
-		var backData = woman;
+		var frontData = "man";
+		var backData = "woman";
 		card = [frontData, backData];
 		return card;	
 	};
