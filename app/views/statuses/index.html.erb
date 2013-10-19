@@ -20,6 +20,15 @@
 <table>
 
 <% @statuses.each do |status| %>
+<<<<<<< HEAD
+  <tr>
+    <td><%= status.subject %></td>
+    <td><%= status.content %></td>
+    <td><%= link_to 'Show', status %></td>
+    <td><%= link_to 'Edit', edit_status_path(status) %></td>
+    <td><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+=======
 <tr>
 <td><%= status.name %></td>
 <td><%= status.content %></td>
@@ -27,6 +36,7 @@
 <td><%= link_to 'Edit', edit_status_path(status) %></td>
 <td><%= link_to 'Destroy', status, method: :delete, data: { confirm: 'Are you sure?' } %></td>
 </tr>
+>>>>>>> f6b22527c0f96d9fcd6c59f125a52edd312f8cba
 <% end %>
 </table>
 <%= link_to 'New Status', new_status_path %>
